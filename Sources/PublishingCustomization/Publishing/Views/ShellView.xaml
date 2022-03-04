@@ -1,0 +1,16 @@
+﻿<Window x:Class="Publishing.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Publishing.Views"
+        mc:Ignorable="d"
+        xmlns:regions="http://prismlibrary.com/"
+        xmlns:regionNames="clr-namespace:Publisher.Infrastructure.Constants;assembly=Publisher.Infrastructure"
+        Title="ShellView" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ContentControl x:Name="cc_MainRegion"
+                        regions:RegionManager.RegionName="{x:Static regionNames:RegionNamesConstants.MainRegion}"
+                        Margin="5"/>
+    </Grid>
+</Window>

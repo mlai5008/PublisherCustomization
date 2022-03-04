@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>netcoreapp3.1</TargetFramework>
+	  <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+	<PropertyGroup>
+	  <OutputPath>..\Publishing\bin\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+	
+	<ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Publisher.Infrastructure\Publisher.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

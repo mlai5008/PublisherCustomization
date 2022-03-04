@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	  <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<OutputPath>..\Publishing\bin\$(Configuration)\</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Resource\linkedin.png" />
+	  <None Remove="Resource\telegram.png" />
+	  <None Remove="Resource\tiktok.png" />
+	  <None Remove="Resource\twitter.png" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Publisher.Infrastructure\Publisher.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\linkedin.png" />
+    <Resource Include="Resource\telegram.png" />
+    <Resource Include="Resource\tiktok.png" />
+    <Resource Include="Resource\twitter.png" />
+  </ItemGroup>
+
+</Project>
