@@ -6,6 +6,7 @@ using Publishing.ModulesSettingModels;
 using Publishing.ViewModels;
 using Publishing.Views;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
 
 namespace Publishing.Boot
@@ -66,7 +67,10 @@ namespace Publishing.Boot
         {
             foreach (ModulesSettingModel modulesSettingModel in modulesSettingModels)
             {
-                AddModule(moduleCatalog, modulesSettingModel);
+                if (File.Exists(modulesSettingModel.AssemblyFile))
+                {
+                    AddModule(moduleCatalog, modulesSettingModel);
+                }
             }
         }
 
