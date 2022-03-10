@@ -3,10 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
 	  <UseWPF>true</UseWPF>
+	  <OutPutDir>..\Publishing\bin\</OutPutDir>
   </PropertyGroup>
 
 	<PropertyGroup>
-		<OutputPath>..\Publishing\bin\$(Configuration)\</OutputPath>
+		<OutputPath>$(OutPutDir)$(Configuration)\</OutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
