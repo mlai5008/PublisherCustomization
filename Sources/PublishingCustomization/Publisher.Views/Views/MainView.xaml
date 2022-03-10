@@ -21,6 +21,12 @@
                 <MenuItem Header="Exit"></MenuItem>
             </MenuItem>
         </Menu>
-        <Label Grid.Row="1" Content="Choose a messenger from the menu" FontSize="22" Background="AliceBlue"/>
+        <Label Grid.Row="1"
+               Content="View A"
+               FontSize="80"
+               FontWeight="Bold"
+               Foreground="Blue"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"/>
     </Grid>
 </UserControl>

@@ -37,6 +37,12 @@
                 <MenuItem Header="Exit"></MenuItem>
             </MenuItem>
         </Menu>
-        <Label Grid.Row="1" Content="Choose a display from the menu" FontSize="22"/>
+        <Label Grid.Row="1"
+               Content="View B"
+               FontSize="80"
+               FontWeight="Bold"
+               Foreground="BlueViolet"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"/>
     </Grid>
 </UserControl>
